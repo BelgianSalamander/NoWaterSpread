@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "nowaterspread",
+  "version": "${version}",
+
+  "name": "No Water Spread",
+  "description": "Allows for toggling the spread of water",
+  "authors": [
+    "Salamander"
+  ],
+
+  "icon": "assets/nowaterspread/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.salamander.nowaterspread.NoWaterSpread"
+    ],
+    "client": [
+      "me.salamander.nowaterspread.client.NoWaterSpreadClient"
+    ]
+  },
+  "mixins": [
+    "nowaterspread.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "~1.18",
+    "java": ">=17"
+  },
+  "suggests": {
+
+  }
+}
